@@ -1,0 +1,88 @@
+{% load static %}
+{% load sass_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    {% include "navbar2.html" %}
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'css/base.scss' %}">
+    <title>{% trans 'S2' %}</title>
+</head>
+<body>
+    <h1>{% trans 'S2' %}</h1>
+
+    <!-- Delete Songs -->
+    <form method="post" action="{% url 'delete_songs' album.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <ul>
+            {% for song in album.songs.all %}
+                <li>
+                    <input type="checkbox" name="songs_to_delete" value="{{ song.id }}">
+                    {{ song.title }}: {{ song.runtime }} {% trans 's3' %}
+                </li>
+            {% empty %}
+                <p>{% trans 'None4' %}</p>
+            {% endfor %}
+        </ul>
+            
+        <div class="d-flex justify-content-between">
+            <button type="submit" onclick="deleteSongs()">{% trans 'D4' %}</button>
+        </div>
+    </form>
+
+    <!-- Add Songs -->
+    <form method="post" action="{% url 'add_songs' album.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+    
+        <ul>
+            {% for song in all_songs %}
+                {% if song not in album.songs.all %}
+                    <li>
+                        <input type="checkbox" name="songs_to_add" value="{{ song.id }}">
+                        {{ song.title }}: {{ song.runtime }} {% trans 's4' %}
+                    </li>
+                {% endif %}
+            {% empty %}
+                <p>{% trans 'None5' %}</p>
+            {% endfor %}
+        </ul>
+                
+        <div class="d-flex justify-content-between">
+            <button type="submit" onclick="addSongs()">{% trans 'A3' %}</button>
+        </div>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% include "footer.html" %}
+    <script>
+        function addSongs() {
+            var songCheckbox = document.getElementsByName('songs_to_add')[0];
+            if (songCheckbox.checked) {
+                alert('Song/s added successfully')
+            }
+            else{
+                alert('No songs have been selected. Please select a song')
+            }
+        }
+    </script>
+
+<script>
+    function deleteSongs() {
+            var songCheckbox = document.getElementsByName('songs_to_add')[0];
+            if (songCheckbox.checked) {
+                alert('Song/s deleted successfully')
+            }
+            else{
+                alert('No songs have been selected. Please select a song')
+            }
+        }
+</script>
+</body>
+</html>

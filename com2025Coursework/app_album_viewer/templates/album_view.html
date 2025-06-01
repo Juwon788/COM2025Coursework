@@ -1,0 +1,61 @@
+{% load static %}
+{% load sass_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "AV1" %}</title>
+    {% include "navbar2.html" %}
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'css/base.scss' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-5">{% trans "All1" %}</h1>
+        <div class="album-container">
+            {% for album in albums %}
+                <div class="album">
+                    <div class="album-cover">
+                        {% if album.cover %}
+                            <img src="{{ album.cover.url }}" alt="{% trans album.title %} {% trans 'C1' %}">
+                        {% else %}
+                            <div class="text-center p-3">
+                                {% trans 'None3' %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="album-details">
+                        <h5>{{ album.title }}</h5>
+                        <p><strong>{% trans 'D2' %}:</strong> {{ album.description }}</p>
+                        <p><strong>{% trans 'A2' %}:</strong> {{ album.artist }}</p>
+                        <p><strong>{% trans 'P' %}:</strong> {{ album.price }}</p>
+                        <p><strong>{% trans 'F' %}:</strong> {{ album.format }}</p>
+                        <p><strong>{% trans 'RD' %}:</strong> {{ album.release_date }}</p>
+                        <p><strong>{% trans 'NoS' %}:</strong> {{ album.songs.count }}</p>
+                        <p><strong>{% trans 'NoC' %}:</strong> {{ album.comments.count }}</p>
+                        <div class="album-actions">
+                            <a href="{% url 'album_detail' album.id %}">{% trans 'D1' %}</a>
+                            {% if album.id %}
+                                <a href="{% url 'edit_album' album.id %}">{% trans 'E1' %}</a>
+                                <a href="{% url 'delete_album' album.id %}" onclick="confirmDelete()">{% trans 'D3' %}</a>
+                                <a href="{% url 'recommend_friend' album.id %}">{% trans 'Rtaf1' %}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% include "footer.html" %}
+    <script>
+        function confirmDelete() {
+            alert('Album deleted successfully')
+            }
+    </script>
+</body>
+</html>
+

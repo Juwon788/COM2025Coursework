@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 09:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_pages/templates/aboutus.html:8
+msgid "About"
+msgstr "About Us - MusicMaestro"
+
+#: app_pages/templates/aboutus.html:12
+msgid "Welcome"
+msgstr "About Us"
+
+#: app_pages/templates/aboutus.html:18
+msgid "Line1"
+msgstr ""
+"At MusicMaestro, we believe in the power of music to inspire, connect, and "
+"transform lives. Founded with a passion for musical expression, we aim to "
+"make a vibrant community where musicians of all levels and genres can enjoy "
+"the music that they love."
+
+#: app_pages/templates/aboutus.html:22
+msgid "Line2"
+msgstr ""
+"Our mission is to have a platform that not only provides exceptional musical "
+"resources but also cultivates a space for easy access and efficiency for "
+"users to listen to all their favourite albums and songs. MusicMaestro is "
+"committed to providing an easy to access area for albums."
+
+#: app_pages/templates/aboutus.html:26
+msgid "Line3"
+msgstr ""
+"With a diverse range of tunes including personalized playlists and an easy "
+"access network, we aim to allow users to enjoy their favourite tunes. Our "
+"dedication to excellence and innovation drives us to constantly evolve and "
+"adapt, ensuring that MusicMaestro remains at the forefront of the ever-"
+"changing musical listening landscape."
+
+#: app_pages/templates/aboutus.html:30
+msgid "Line4"
+msgstr ""
+"Join us on this musical odyssey as we harmonize passion, enjoyment, and "
+"community to create something truly extraordinary. "
+
+#: app_pages/templates/aboutus.html:33 app_pages/templates/contact.html:28
+#: app_pages/templates/login.html:33 app_pages/templates/signup.html:60
+#: app_pages/templates/welcomepage.html:33
+msgid "ImageDescription"
+msgstr "Description of the image"
+
+#: app_pages/templates/contact.html:8
+msgid "Contact"
+msgstr "Contact Us"
+
+#: app_pages/templates/contact.html:12
+msgid "C"
+msgstr "Contact Form"
+
+#: app_pages/templates/contact.html:26
+msgid "S1"
+msgstr "Send"
+
+#: app_pages/templates/login.html:8 app_pages/templates/signup.html:40
+msgid "L"
+msgstr "Login"
+
+#: app_pages/templates/login.html:9 app_pages/templates/login.html:30
+msgid "Log"
+msgstr "Log in"
+
+#: app_pages/templates/login.html:25
+msgid "Show"
+msgstr "Show Password"
+
+#: app_pages/templates/signup.html:8
+msgid "S5"
+msgstr "Sign Up to Us"
+
+#: app_pages/templates/signup.html:9
+msgid "SignupMessage"
+msgstr "Sign Up"
+
+#: app_pages/templates/signup.html:26
+msgid "Hide"
+msgstr "Hide Password"
+
+#: app_pages/templates/signup.html:35
+msgid "Hide1"
+msgstr "Hide Password Re-entry"
+
+#: app_pages/templates/welcomepage.html:10
+msgid "W2"
+msgstr "Welcome"
+
+#: app_pages/templates/welcomepage.html:32
+msgid "W"
+msgstr "Welcome"

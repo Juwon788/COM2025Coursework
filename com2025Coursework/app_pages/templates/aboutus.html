@@ -1,0 +1,54 @@
+{% load static %}
+{% load sass_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+    {% block title %}
+    <title>{% trans "About" %}</title>
+    {% endblock title%}
+   
+<head>
+    <h1>{% trans "Welcome" %}</h1>
+    {% include "navbar.html" %}
+    <link rel="stylesheet" type="text/css" href={% sass_src 'css/base.scss' %}>
+</head>
+<body>
+    <p>
+        {% trans "Line1" %}
+    </p>
+
+    <p>
+        {% trans "Line2" %}
+    </p>
+
+    <p>
+        {% trans "Line3" %}
+    </p>
+
+    <p>
+        {% trans "Line4" %}
+    </p>
+    
+    <img src="{{ image_url }}" alt="{% trans 'ImageDescription' %}">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: '/pages/about/',
+                method: 'GET',
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(error) {
+                    console.error(error);
+                }
+            });
+        });
+    </script>
+    
+    {% include "footer.html" %}
+</body>
+</html>
+

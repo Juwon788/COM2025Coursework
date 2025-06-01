@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 14:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_album_viewer/templates/account.html:9
+msgid "Account"
+msgstr "Your account"
+
+#: app_album_viewer/templates/account.html:14
+msgid "Comment"
+msgstr "Your Comments"
+
+#: app_album_viewer/templates/account.html:23
+msgid "None1"
+msgstr "No comments available"
+
+#: app_album_viewer/templates/add_album.html:9
+#: app_album_viewer/templates/add_album.html:13
+msgid "Add1"
+msgstr "Add a new album"
+
+#: app_album_viewer/templates/add_album.html:38
+msgid "Add2"
+msgstr "Add"
+
+#: app_album_viewer/templates/album_detail.html:12
+#: app_album_viewer/templates/album_detail.html:15
+msgid "AD1"
+msgstr "Album Details"
+
+#: app_album_viewer/templates/album_detail.html:17
+msgid "VS1"
+msgstr "View Songs"
+
+#: app_album_viewer/templates/album_detail.html:25
+#: app_album_viewer/templates/album_view.html:21
+msgid "C1"
+msgstr "Comments"
+
+#: app_album_viewer/templates/album_detail.html:32
+msgid "None2"
+msgstr "No comments available"
+
+#: app_album_viewer/templates/album_detail.html:35
+msgid "Add3"
+msgstr "Add Comments"
+
+#: app_album_viewer/templates/album_view.html:9
+msgid "AV1"
+msgstr "Album View"
+
+#: app_album_viewer/templates/album_view.html:15
+msgid "All1"
+msgstr "All Albums"
+
+#: app_album_viewer/templates/album_view.html:24
+msgid "None3"
+msgstr "No cover image available"
+
+#: app_album_viewer/templates/album_view.html:30
+msgid "D2"
+msgstr "Description"
+
+#: app_album_viewer/templates/album_view.html:31
+msgid "A2"
+msgstr "Artist"
+
+#: app_album_viewer/templates/album_view.html:32
+msgid "P"
+msgstr "Price"
+
+#: app_album_viewer/templates/album_view.html:33
+msgid "F"
+msgstr "Format"
+
+#: app_album_viewer/templates/album_view.html:34
+msgid "RD"
+msgstr "Release Date"
+
+#: app_album_viewer/templates/album_view.html:35
+msgid "NoS"
+msgstr "Number of Songs"
+
+#: app_album_viewer/templates/album_view.html:36
+msgid "NoC"
+msgstr "Number of Comments"
+
+#: app_album_viewer/templates/album_view.html:38
+msgid "D1"
+msgstr "Details"
+
+#: app_album_viewer/templates/album_view.html:40
+msgid "E1"
+msgstr "Edit"
+
+#: app_album_viewer/templates/album_view.html:41
+msgid "D3"
+msgstr "Delete"
+
+#: app_album_viewer/templates/album_view.html:42
+msgid "Rtaf1"
+msgstr "Recommend to a Friend"
+
+#: app_album_viewer/templates/comment.html:9
+#: app_album_viewer/templates/comment.html:14
+msgid "Add4"
+msgstr "Add comment"
+
+#: app_album_viewer/templates/comment.html:18
+msgid "Add5"
+msgstr "Add"
+
+#: app_album_viewer/templates/edit_album.html:8
+#: app_album_viewer/templates/edit_album.html:12
+msgid "Edit"
+msgstr "Edit Album"
+
+#: app_album_viewer/templates/edit_album.html:26
+msgid "Submit"
+msgstr "Change"
+
+#: app_album_viewer/templates/recommend_friend.html:12
+msgid "Recommend"
+msgstr "Recommend to Friend"
+
+#: app_album_viewer/templates/recommend_friend.html:15
+msgid "Rtaf2"
+msgstr "Recommend to a Friend"
+
+#: app_album_viewer/templates/recommend_friend.html:25
+msgid "SE"
+msgstr "Send Email"
+
+#: app_album_viewer/templates/songs.html:12
+#: app_album_viewer/templates/songs.html:15
+msgid "S2"
+msgstr "Songs"
+
+#: app_album_viewer/templates/songs.html:26
+msgid "s3"
+msgstr "seconds"
+
+#: app_album_viewer/templates/songs.html:29
+msgid "None4"
+msgstr "No songs available"
+
+#: app_album_viewer/templates/songs.html:34
+msgid "D4"
+msgstr "Delete Songs"
+
+#: app_album_viewer/templates/songs.html:48
+msgid "s4"
+msgstr "seconds"
+
+#: app_album_viewer/templates/songs.html:52
+msgid "None5"
+msgstr "No songs can be added"
+
+#: app_album_viewer/templates/songs.html:57
+msgid "A3"
+msgstr "Add Songs"
+
+#: app_album_viewer/views.py:189
+msgid "RecommendTitle"
+msgstr "Hey, %(username)s wants you to check out the %(title)s album"
+
+#: app_album_viewer/views.py:191
+msgid "subject"
+msgstr "%(subject)s"
